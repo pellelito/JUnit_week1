@@ -57,7 +57,7 @@ public class TestClassTest {
 	@Test		
 	public void testFloatAgain() {
 
-		assertEquals(0.0012,test.returnMaxFloat(0.0014f, 0.0012f), 0.0002f);
+		assertEquals(0.0014f,test.returnMaxFloat(0.0014f, 0.0012f), 0.0002f);
 				
 	}
 	// 8

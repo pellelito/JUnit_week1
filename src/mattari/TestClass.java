@@ -28,10 +28,8 @@ public class TestClass {
 	}
 	
 	public float returnMaxFloat(float one, float two) {
-		
 		return Math.max(one, two);
 	}
-
 	public double returnMaxDouble(double one, double two) {
 		return Math.max(one, two);
 	}
@@ -101,6 +99,8 @@ public class TestClass {
 		System.out.println(test.returnRandom());
 
 	}
+
+	
 
 	
 	
