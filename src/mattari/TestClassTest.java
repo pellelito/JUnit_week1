@@ -11,37 +11,26 @@ public class TestClassTest {
 	// 1
 	@Test
 	public void testLong() {
-		long one = 120;
-		long two = 80;
 		
-		assertEquals(200,one+two);
+		assertEquals(80,test.returnMinLong(120, 80));
 	}
 	// 2
 	@Test
 	public void testFloat() {
-		float one = 0.0014f;
-		float two = 0.0012f;
-//		float one = 0.0013f;  //Varför failar denna?
-//		float two = 0.0011f;
-		float delta = 0.0002f;
-		assertEquals(one, two, delta);
+
+		assertEquals(0.0012,test.returnMinFloat(0.0014f, 0.0012f), 0.0002f);
 	}
 	// 3
 	@Test
 	public void testInt() {
-		int one = 120;
-		int two = 80;
 		
-		assertEquals(200,one+two);
+		assertEquals(80,test.returnMinInt(80,120));
 	}
 	// 4
 	@Test
 	public void testDouble() {
-		double one = 120.5;
-		double two = 80;
-		double delta = 0.5;
 		
-		assertEquals(200,one+two, delta);
+		assertEquals(11.34,test.returnMinDouble(23.5, 11.34),0);
 	}
 	// 5
 	@Test
@@ -57,12 +46,19 @@ public class TestClassTest {
 		assertEquals(23.5,test.returnMaxDouble(23.5, 11.34), delta);
 			
 	}
-	// 7	
+	// 7a	
 	@Test		
 	public void testIntAThirdTime() {
 
 		assertEquals(23,test.returnMaxInt(23, 11));
 			
+	}
+	// 7b	
+	@Test		
+	public void testFloatAgain() {
+
+		assertEquals(0.0012,test.returnMaxFloat(0.0014f, 0.0012f), 0.0002f);
+				
 	}
 	// 8
 	@Test

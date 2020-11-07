@@ -6,10 +6,32 @@ public class TestClass {
 	
 	static TestClass test = new TestClass();
 	
+	public int returnMinInt(int one, int two) {
+		return Math.min(one, two);
+	}
+	
+	public double returnMinDouble(double one, double two) {
+		return Math.min(one, two);
+	}
+	
+	public long returnMinLong(long one, long two) {
+		
+		return Math.min(one, two);
+	}
+	public float returnMinFloat(float one, float two) {
+		
+		return Math.min(one, two);
+	}
+	
 	public int returnMaxInt(int one, int two) {
 		return Math.max(one, two);
 	}
 	
+	public float returnMaxFloat(float one, float two) {
+		
+		return Math.max(one, two);
+	}
+
 	public double returnMaxDouble(double one, double two) {
 		return Math.max(one, two);
 	}
